@@ -6,7 +6,7 @@ setwd("D:/Coursera_R/GC_Proj") # I put train, test, features.txt etc under this 
 features  <- read.table('features.txt')[, 2] 
 features
 
-ft <- grepl("std | mean", features) 
+ft <- grepl("std|mean", features) 
 ft
 
 activities<- read.table('activity_labels.txt',col.names = c('Code', 'ActivityName'))
